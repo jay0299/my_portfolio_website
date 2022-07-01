@@ -192,3 +192,67 @@ p {
   background-color: var(--color-pale-green);
   transition: all var(--animation-duration) ease;
 }
+
+/* Section common */
+section {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About Me */
+.about__majors {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.major__icon {
+  width: 180px;
+  height: 180px;
+  line-height: 180px;
+  font-size: 70px;
+  margin: auto;
+  color: var(--color-pale-green);
+  border: 3px solid var(--color-light-pale-green);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__icon i {
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+.major__icon i:hover {
+  color: var(--color-dark-pale-green);
+  transform: rotate(30deg) scale(1.2);
+}
+
+.about__major-description {
+  width: 300px;
+}
+
+.school {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.school__logo {
+  width: 50px;
+  height: 40px;
+  margin-right: 30px;
+}
+
+.school__name {
+  font-size: var(--font-small);
+}
+
+.school__period {
+  font-size: var(--font-micro);
+}
