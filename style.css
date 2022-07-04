@@ -14,6 +14,7 @@
 
   /* Color */
   --color-white: #ffffff;
+  --color-semi-light-white: #eaeaea;
   --color-light-white: #fbf8ef;
   --color-black: #000000;
   --color-light-gray: #acacac;
@@ -379,7 +380,7 @@ section {
 
 .project__description {
   background-color: var(--color-black);
-  width: 33.33%;
+  width: 33.3%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -411,7 +412,7 @@ section {
 
 /* Testimonials */
 #testimonials {
-  background-color: var(--color-light-pale-green);
+  background-color: var(--color-semi-light-white);
 }
 
 .testimonial {
@@ -444,11 +445,28 @@ section {
 }
 
 .testimonial__speech-bubble p {
-  color: var(--color-gray);
+  color: var(--color-dark-gray);
 }
 
 .testimonial__speech-bubble a {
   color: var(--color-yellow);
+  font-weight: var(--weight-semi-bold);
+
 }
 
 /* Contact Me */
+#contact {
+  background-color: var(--color-pale-green);
+}
+
+#contact i {
+  font-size: 50px;
+  color: var(--color-light-pale-green);
+  margin: 20px;
+}
+
+#contact i:hover {
+  transform: scale(1.1);
+  color: var(--color-light-white);
+  transition: all var(--animation-duration) ease-in-out;
+}
