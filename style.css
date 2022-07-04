@@ -16,9 +16,9 @@
   --color-white: #ffffff;
   --color-light-white: #fbf8ef;
   --color-black: #000000;
-  --color-light-gray: #cacaca;
-  --color-gray: #a6a6a6;
-  --color-dark-gray: #878787;
+  --color-light-gray: #acacac;
+  --color-gray: #919191;
+  --color-dark-gray: #787878;
   --color-light-yellow: #ffedcf;
   --color-yellow: #ecc478;
   --color-dark-pale-green: #6d8497;
@@ -324,8 +324,6 @@ section {
   height: 50%;
 }
 
-
-
 /* Projects */
 .projects__categories {
   padding: 10px;
@@ -412,5 +410,45 @@ section {
 }
 
 /* Testimonials */
+#testimonials {
+  background-color: var(--color-light-pale-green);
+}
+
+.testimonial {
+  display: flex;
+  margin: 32px;
+}
+
+.testimonial__img:nth-child(odd) {
+  margin-right: 32px;
+}
+
+.testimonial__img:nth-child(even) {
+  margin-left: 32px;
+}
+
+.testimonial__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--color-white);
+}
+
+.testimonial__speech-bubble {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-white);
+  border-radius: var(--size-border-radius);
+  padding: 8px 24px;
+}
+
+.testimonial__speech-bubble p {
+  color: var(--color-gray);
+}
+
+.testimonial__speech-bubble a {
+  color: var(--color-yellow);
+}
 
 /* Contact Me */
